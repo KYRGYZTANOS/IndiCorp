@@ -1,0 +1,143 @@
+@import url(../style/fonts.css);
+
+:root {
+    --dark-color: #252b42;
+    --disablea-color: #737373;
+    --primary-color: #00a0c1;
+    --warn-color: #ffa62b;
+}
+
+/* BASE CONFIG */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+ul {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* BASE CONFIG */
+/* UNIQUE */
+.container {
+    max-width: 1070px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+/* UNIQUE */
+/* HEADER */
+.header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 36px;
+}
+
+.header__logo {
+    display: inline-block;
+    color: var(--dark-color);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    margin-right: 117px;
+}
+
+.header__link {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--disablea-color);
+}
+
+.header__link:not(:last-child) {
+    margin-right: 21px;
+}
+
+/* HEADER */
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url(../images/hero.jpg) no-repeat center/cover;
+}
+
+.hero__cards {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    z-index: 2;
+    max-width: 1050px;
+    /* position: absolute; */
+}
+
+.hero__card {
+    padding: 39px 28px 35px 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+
+svg {
+    margin-bottom: 10px;
+}
+
+.card__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: var(--dark-color);
+    margin-bottom: 10px ;
+}
+
+.card__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: var(--disablea-color);
+    width: 200px;
+}
+
+/* HERO */
+/* FEATURES */
+.features {
+    padding: 211px 0 80px;
+}
+
+/* FEATURES */
